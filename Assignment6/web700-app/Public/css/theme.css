@@ -1,0 +1,118 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Apply font to body */
+body, html {
+    font-family: 'Poppins', sans-serif; /* Updated font */
+    height: 100%;
+    background: linear-gradient(135deg, #ff8c00, #32cd32); /* Orange to Green gradient */
+    overflow: auto;
+}
+
+/* Navigation Bar */
+.bg-light {
+    background-color: #444444 !important; /* Dark gray for navbar */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Brand */
+.navbar-brand {
+    color: #fa0b0b !important; /* White text */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the Navbar Brand (Student Name) */
+.navbar-light .navbar-brand {
+    color: #ffce00; /* Bright Yellow-Orange Text Color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    font-size: 1.8rem; /* Increased font size */
+    transition: color 0.3s ease;
+}
+
+/* Navigation Links */
+.nav-link {
+    color: #f2f2f2 !important; /* Light gray links */
+}
+
+/* Hover effect for nav-link */
+.nav-link:hover {
+    color: #0e0101 !important; /* Bright Yellow-Orange on hover */
+}
+
+.navbar-light .navbar-brand:hover, 
+.navbar-light .navbar-brand:focus {
+    color: #f10707 !important; /* Lighter yellow on hover */
+    text-decoration: none;
+}
+
+/* Styling the Primary Button */
+.btn-primary {
+    background: linear-gradient(45deg, #ff8c00, #32cd32); /* Gradient from Orange to Green */
+    color: rgb(16, 1, 1);
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 20px; /* Added padding for better size */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #ff6f00, #28a745); /* Darker gradient on hover */
+    color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Odd Table Rows */
+table tr:nth-child(odd) td {
+    background-color: #f1f1f1; /* Light gray for odd rows */
+    color: #444; /* Dark text color */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #0c0101; /* White headings */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Anchor Links */
+a {
+    color: #ff0000; /* Bright Yellow-Orange links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #120f01; /* Lighter yellow on hover */
+}
+
+/* Fieldset Legends */
+legend {
+    padding: 8px 16px;
+    color: #8e0404; /* White color for legends */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1.2em;
+}
+
+/* Main Content Styling */
+.container {
+    background-color: #e0f0a5; /* White background for content */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* More pronounced rounded corners */
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 1.5rem; /* Adjust brand size for smaller screens */
+    }
+    
+    .btn-primary {
+        padding: 8px 15px; /* Adjust button padding for smaller screens */
+    }
+}
